@@ -29,8 +29,8 @@ public class RunnerFuncionalTest {
 		System.setProperty("webdriver.chrome.driver", "/home/gustavo/eclipse-workspace/SeleniumDrivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://srbarriga.herokuapp.com");
-		driver.findElement(By.id("email")).sendKeys("gustavo.henrique@logicsp.com.br");
-		driver.findElement(By.name("senha")).sendKeys("pa33Lx$k");
+		driver.findElement(By.id("email")).sendKeys("teste@teste.com.br");
+		driver.findElement(By.name("senha")).sendKeys("senha");
 		driver.findElement(By.tagName("button")).click();
 		driver.findElement(By.linkText("reset")).click();
 		driver.quit();
